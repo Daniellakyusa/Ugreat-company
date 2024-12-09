@@ -1,0 +1,16 @@
+body{
+    background-color:rgb(189, 189, 201);
+}ul>li{
+    list-style: none;
+    display: inline;
+}
+ul>li>a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    margin-left: 4px;
+    padding: 5px;
+}
+ul>li>a:hover{
+    color: aqua;
+        background-color: white;}
