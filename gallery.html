@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Page</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="images/galllery icon.jpeg" height="40" width="40">
+
+  <style>
+    .gallery-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      border-radius: 10px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .navbar {
+      background: linear-gradient();
+      background-color: rgb(101, 163, 245);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff;
+        }
+        .navbar-nav .nav-link {
+            color: white; /* Default link color */
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 15px;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffcc00; /* Hover color for links */
+        }
+        .navbar-toggler {
+            border-color: white;
+        }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">UGREAT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">welcome</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container py-5">
+
+  <h1 class="text-center section-title">UGREAT COMPANY</h1>
+
+  <div class="row mb-5">
+    <div class="col-md-4 mb-4">
+      <img src="ug.jpg" alt="Image 1" class="gallery-image">
+    </div>
+    <div class="col-md-4 mb-4">
+      <img src="ugreat.jpg" alt="Image 2" class="gallery-image">
+    </div>
+    <div class="col-md-4 mb-4">
+      <img src="ugr.jpg" alt="Image 3" class="gallery-image">
+    </div>
+  </div>
+
+  <h2 class="text-center section-title"> ugreat video but in french</h2>
+  <div class="video-container mb-5">
+    <iframe src="ugreat vieo.mp4" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+</body>
+</html>
