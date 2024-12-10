@@ -53,6 +53,39 @@
         section{
             background-color: #4e45fc;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            font-size: 18px;
+        }
+        .green {
+            background-color: #ccffcc;
+        }
+        .orange { background-color: #ffcc99;
+        }
+        .red {
+            background-color: #ffcccc;
+        }
+        .blue {
+            background-color: #cce5ff;
+        }
+.gallery-image{
+    height: 200px;
+    width: 500px; 
+}
+
+
+
     </style>
 </head>
 <body>
@@ -102,12 +135,16 @@
                 <div class="col-md-6">
                     <div class="card shadow text-center p-4">
                         <h5 class="card-title">UG-CARE plus</h5>
+                        <img src="ugr.jpg" alt="Image 3" class="gallery-image">
                         <p class="card-text">It's better to prevent than to treat</p>
                         <p>Here we have some products in high quality and capacities:</p>
                         <p>UG-Booster Berry plus: this one it help and provid a better health for woman</p>
                         <p>UG-Booster Orange plus:provide man healthy</p>
                         <p>UG-Cafe: this is a cafe provided by UGREAT</p>
                         <p>UG-NDTOX: this one decrease things toxic in our body</p>
+                        <div class="col-md-4 mb-4">
+                           
+                          </div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -115,6 +152,49 @@
                         <h5 class="card-title">UGREAT BUSINESS</h5>
                         <p class="card-text"> With this one ,we work with investiment and management </p>
                         <p>You can work and invest any where you are</p>
+                        <p> Here we have how to work in investiment :</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Package</th>
+                                    <th>Start From</th>
+                                    <th>PV</th>
+                                    <th>Products</th>
+                                    <th>Upgrade Period</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="green">
+                                    <td>Basic</td>
+                                    <td>$100</td>
+                                    <td>39.5 PV</td>
+                                    <td>2 Products</td>
+                                    <td>20 Days</td>
+                                </tr>
+                                <tr class="orange">
+                                    <td>Classic</td>
+                                    <td>$200</td>
+                                    <td>78 PV</td>
+                                    <td>4 Products</td>
+                                    <td>40 Days</td>
+                                </tr>
+                                <tr class="red">
+                                    <td>Premium</td>
+                                    <td>$500</td>
+                                    <td>315 PV</td>
+                                    <td>16 Products</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr class="blue">
+                                    <td>Ultimate</td>
+                                    <td>$1000</td>
+                                    <td>789 PV</td>
+                                    <td>40 Products</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
                     </div>
                 </div>
             </div>
